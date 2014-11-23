@@ -5,6 +5,7 @@
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 /*via btn*/
 .btn {
@@ -258,7 +259,6 @@
   -o-border-radius: 5px;
   border-radius: 5px;
   background: white;
-  display: inline-block;
 }
 .panel .panel-head {
   font-size: 16px;
@@ -372,7 +372,7 @@ textarea {
 }
 .list-group .list-item {
   padding: 10px;
-  margin: 5px 10px 0 10px;
+  margin: 5px 0;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -o-border-radius: 5px;
@@ -470,6 +470,10 @@ textarea {
 .slider.default .handler:active {
   background-color: #292e34;
 }
+.slider:after {
+  content: "";
+  clear: both;
+}
 .slider-vertical {
   width: 0;
   height: 100%;
@@ -501,21 +505,33 @@ textarea {
   position: relative;
   margin: 5px;
   padding: 0;
+  background: #d9d9d9;
+  overflow: hidden;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
-  -webkit-box-shadow: 0 0 5px 0 rgba(85, 96, 110, 0.5) inset;
-  -moz-box-shadow: 0 0 5px 0 rgba(85, 96, 110, 0.5) inset;
-  -o-box-shadow: 0 0 5px 0 rgba(85, 96, 110, 0.5) inset;
-  box-shadow: 0 0 5px 0 rgba(85, 96, 110, 0.5) inset;
+  -webkit-box-shadow: -2px 2px 2px 0 rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: -2px 2px 2px 0 rgba(0, 0, 0, 0.1) inset;
+  -o-box-shadow: -2px 2px 2px 0 rgba(0, 0, 0, 0.1) inset;
+  box-shadow: -2px 2px 2px 0 rgba(0, 0, 0, 0.1) inset;
 }
 .progress .progress-bar {
+  float: left;
   width: 0;
   height: 100%;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
+  line-height: 20px;
+}
+.progress.primary .progress-bar {
+  background: #0080ff;
+}
+.progress.danger .progress-bar {
+  background: #fb5240;
+}
+.progress.success .progress-bar {
+  background: #36c77b;
+}
+.progress.default .progress-bar {
+  background: #55606e;
 }
 /*progress end*/

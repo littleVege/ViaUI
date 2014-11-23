@@ -19,41 +19,41 @@
     <button class="btn-liner default active">default</button>
 </div>
 
-<div style="background: gray;padding:20px">
+<div style="background: #c3c3c3;padding:20px">
     <div class="popup popup-bottom">
-        hahahahahhaha
-    </div>
-    <div class="popup popup-left">
-        hahahahahhaha
+        popup on the bottom
     </div>
     <div class="popup popup-right">
-        hahahahahhaha
+        popup on the right
+    </div>
+    <div class="popup popup-left">
+        popup on the left
     </div>
     <div class="popup popup-top">
-        hahahahahhaha
+        popup on the top
     </div>
 </div>
 
 <div>
-    <div class="panel default">
+    <div class="panel default" style="width: 300px">
         <div class="panel-head">head of a panel</div>
         <div class="panel-body">
             content
         </div>
     </div>
-    <div class="panel success">
+    <div class="panel success" style="width: 300px">
         <div class="panel-head">head of a panel</div>
         <div class="panel-body">
             content
         </div>
     </div>
-    <div class="panel primary">
+    <div class="panel primary" style="width: 300px">
         <div class="panel-head">head of a panel</div>
         <div class="panel-body">
             content
         </div>
     </div>
-    <div class="panel danger">
+    <div class="panel danger" style="width: 300px">
         <div class="panel-head">head of a panel</div>
         <div class="panel-body">
             content
@@ -92,19 +92,21 @@
         <div class="handler"></div>
     </div>
     <div class="slider slider-horizontal success">
-        <div class="slider-progress"></div>
-        <div class="handler"></div>
+        <div class="slider-progress" style="width: 30%"></div>
+        <div class="handler" style="left: 30%"></div>
     </div>
     <div class="slider slider-horizontal danger">
-        <div class="slider-progress"></div>
-        <div class="handler"></div>
+        <div class="slider-progress" style="width: 50%"></div>
+        <div class="handler" style="left: 50%"></div>
     </div>
     <div class="slider slider-horizontal default">
         <div class="slider-progress"></div>
         <div class="handler"></div>
     </div>
 </div>
-<div style="height: 100px">
+<!--TODO:something wrong with slider-vertical-->
+
+<!--<div style="height: 100px">
     <div class="slider slider-vertical primary">
         <div class="slider-progress"></div>
         <div class="handler"></div>
@@ -121,7 +123,23 @@
         <div class="slider-progress"></div>
         <div class="handler"></div>
     </div>
+</div>-->
+
+<div style="width: 500px">
+    <div class="progress primary">
+        <div class="progress-bar" style="width: 30%"></div>
+    </div>
+    <div class="progress danger">
+        <div class="progress-bar" style="width: 50%"></div>
+    </div>
+    <div class="progress success">
+        <div class="progress-bar" style="width: 80%"></div>
+    </div>
+    <div class="progress default">
+        <div class="progress-bar" style="width: 80%"></div>
+    </div>
 </div>
+
     <script type="text/javascript" src="lib/via.js"></script>
 </body>
 </html>
