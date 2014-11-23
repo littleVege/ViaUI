@@ -28,10 +28,10 @@
 }
 .btn.default:active,
 .btn.default.active {
-  -webkit-box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.3) inset;
-  -moz-box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.3) inset;
-  -o-box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.3) inset;
-  box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.3) inset;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
+  -o-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
 }
 .btn.default:hover,
 .btn.default:active,
@@ -43,10 +43,10 @@
 }
 .btn.primary:active,
 .btn.primary.active {
-  -webkit-box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.3) inset;
-  -moz-box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.3) inset;
-  -o-box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.3) inset;
-  box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.3) inset;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
+  -o-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
 }
 .btn.primary:hover,
 .btn.primary:active,
@@ -58,10 +58,10 @@
 }
 .btn.success:active,
 .btn.success.active {
-  -webkit-box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.3) inset;
-  -moz-box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.3) inset;
-  -o-box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.3) inset;
-  box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.3) inset;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
+  -o-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
 }
 .btn.success:hover,
 .btn.success:active,
@@ -73,10 +73,10 @@
 }
 .btn.danger:active,
 .btn.danger.active {
-  -webkit-box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.3) inset;
-  -moz-box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.3) inset;
-  -o-box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.3) inset;
-  box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.3) inset;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
+  -o-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
 }
 .btn.danger:hover,
 .btn.danger:active,
@@ -358,6 +358,11 @@ textarea.danger:focus {
   -o-box-shadow: 0 0 5px 0 rgba(251, 82, 64, 0.7) inset;
   box-shadow: 0 0 5px 0 rgba(251, 82, 64, 0.7) inset;
 }
+textarea {
+  display: block;
+  resize: vertical;
+  box-sizing: content-box;
+}
 /*input*/
 /*list-group*/
 .list-group {
@@ -387,8 +392,21 @@ textarea.danger:focus {
 /*slider handler color mixin end*/
 .slider {
   border: 1px solid #55606e;
+  position: relative;
+  margin: 20px 10px;
+  /*slider progress*/
+  /*slider handler*/
+}
+.slider .slider-progress {
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  border: 1px solid;
+  width: 0;
+  height: 0;
 }
 .slider .handler {
+  cursor: pointer;
   width: 20px;
   height: 20px;
   -webkit-border-radius: 10px;
@@ -400,40 +418,104 @@ textarea.danger:focus {
   top: 0;
   margin: -10px 0 0 -10px;
 }
-.slider .handler.primary {
+.slider.primary .slider-progress {
+  background-color: #004d99;
+  border-color: #0080ff;
+}
+.slider.primary .handler {
   background-color: #0080ff;
 }
-.slider .handler.primary:hover {
+.slider.primary .handler:hover {
   background-color: #0066cc;
 }
-.slider .handler.primary:active {
+.slider.primary .handler:active {
   background-color: #004d99;
 }
-.slider .handler.success {
+.slider.success .slider-progress {
+  background-color: #207749;
+  border-color: #36c77b;
+}
+.slider.success .handler {
   background-color: #36c77b;
 }
-.slider .handler.success:hover {
+.slider.success .handler:hover {
   background-color: #2b9f62;
 }
-.slider .handler.success:active {
+.slider.success .handler:active {
   background-color: #207749;
 }
-.slider .handler.danger {
+.slider.danger .slider-progress {
+  background-color: #d11804;
+  border-color: #fb5240;
+}
+.slider.danger .handler {
   background-color: #fb5240;
 }
-.slider .handler.danger:hover {
+.slider.danger .handler:hover {
   background-color: #fa250e;
 }
-.slider .handler.danger:active {
+.slider.danger .handler:active {
   background-color: #d11804;
 }
-.slider .handler.default {
+.slider.default .slider-progress {
+  background-color: #292e34;
+  border-color: #55606e;
+}
+.slider.default .handler {
   background-color: #55606e;
 }
-.slider .handler.default:hover {
+.slider.default .handler:hover {
   background-color: #3f4751;
 }
-.slider .handler.default:active {
+.slider.default .handler:active {
   background-color: #292e34;
 }
+.slider-vertical {
+  width: 0;
+  height: 100%;
+  display: inline-block;
+}
+.slider-vertical .handler {
+  top: 100%;
+  -webkit-transition: top 0.6s ease;
+  -moz-transition: top 0.6s ease;
+  -o-transition: top 0.6s ease;
+  transition: top 0.6s ease;
+}
+.slider-horizontal {
+  height: 0;
+  width: 100%;
+}
+.slider-horizontal .handler {
+  -webkit-transition: left 0.6s ease;
+  -moz-transition: left 0.6s ease;
+  -o-transition: left 0.6s ease;
+  transition: left 0.6s ease;
+}
 /*slider end*/
+/*progress*/
+/*progress color mixin*/
+/*progress color mixin end*/
+.progress {
+  height: 15px;
+  position: relative;
+  margin: 5px;
+  padding: 0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 5px 0 rgba(85, 96, 110, 0.5) inset;
+  -moz-box-shadow: 0 0 5px 0 rgba(85, 96, 110, 0.5) inset;
+  -o-box-shadow: 0 0 5px 0 rgba(85, 96, 110, 0.5) inset;
+  box-shadow: 0 0 5px 0 rgba(85, 96, 110, 0.5) inset;
+}
+.progress .progress-bar {
+  width: 0;
+  height: 100%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+/*progress end*/
