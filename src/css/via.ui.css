@@ -1,0 +1,439 @@
+/*mixin func*/
+/*mixin end*/
+* {
+  font-size: 14px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+/*via btn*/
+.btn {
+  color: white;
+  margin: 5px;
+  padding: 8px 15px;
+  border: 0 none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*btn-color-mixin*/
+/*btn-colo-mixin end*/
+.btn.default {
+  background-color: #55606e;
+}
+.btn.default:active,
+.btn.default.active {
+  -webkit-box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.3) inset;
+  -moz-box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.3) inset;
+  -o-box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.3) inset;
+  box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.3) inset;
+}
+.btn.default:hover,
+.btn.default:active,
+.btn.default.active {
+  background-color: #3f4751;
+}
+.btn.primary {
+  background-color: #0080ff;
+}
+.btn.primary:active,
+.btn.primary.active {
+  -webkit-box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.3) inset;
+  -moz-box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.3) inset;
+  -o-box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.3) inset;
+  box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.3) inset;
+}
+.btn.primary:hover,
+.btn.primary:active,
+.btn.primary.active {
+  background-color: #0066cc;
+}
+.btn.success {
+  background-color: #36c77b;
+}
+.btn.success:active,
+.btn.success.active {
+  -webkit-box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.3) inset;
+  -moz-box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.3) inset;
+  -o-box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.3) inset;
+  box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.3) inset;
+}
+.btn.success:hover,
+.btn.success:active,
+.btn.success.active {
+  background-color: #2b9f62;
+}
+.btn.danger {
+  background-color: #fb5240;
+}
+.btn.danger:active,
+.btn.danger.active {
+  -webkit-box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.3) inset;
+  -moz-box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.3) inset;
+  -o-box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.3) inset;
+  box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.3) inset;
+}
+.btn.danger:hover,
+.btn.danger:active,
+.btn.danger.active {
+  background-color: #fa250e;
+}
+.btn-liner {
+  background: white;
+  padding: 6px 13px;
+  margin: 5px;
+  border: 2px solid;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*btn-line-color-mixin*/
+/*mixin init end*/
+.btn-liner.default {
+  color: #55606e;
+  border-color: #55606e;
+}
+.btn-liner.default:hover,
+.btn-liner.default:active,
+.btn-liner.default.active {
+  background-color: #a4adb8;
+  border-color: #3f4751;
+}
+.btn-liner.default:active,
+.btn-liner.default.active {
+  -webkit-box-shadow: 0 0 8px 0 #3f4751 inset;
+  -moz-box-shadow: 0 0 8px 0 #3f4751 inset;
+  -o-box-shadow: 0 0 8px 0 #3f4751 inset;
+  box-shadow: 0 0 8px 0 #3f4751 inset;
+  color: #292e34;
+}
+.btn-liner.primary {
+  color: #0080ff;
+  border-color: #0080ff;
+}
+.btn-liner.primary:hover,
+.btn-liner.primary:active,
+.btn-liner.primary.active {
+  background-color: #99ccff;
+  border-color: #0066cc;
+}
+.btn-liner.primary:active,
+.btn-liner.primary.active {
+  -webkit-box-shadow: 0 0 8px 0 #0066cc inset;
+  -moz-box-shadow: 0 0 8px 0 #0066cc inset;
+  -o-box-shadow: 0 0 8px 0 #0066cc inset;
+  box-shadow: 0 0 8px 0 #0066cc inset;
+  color: #004d99;
+}
+.btn-liner.success {
+  color: #36c77b;
+  border-color: #36c77b;
+}
+.btn-liner.success:hover,
+.btn-liner.success:active,
+.btn-liner.success.active {
+  background-color: #ade9ca;
+  border-color: #2b9f62;
+}
+.btn-liner.success:active,
+.btn-liner.success.active {
+  -webkit-box-shadow: 0 0 8px 0 #2b9f62 inset;
+  -moz-box-shadow: 0 0 8px 0 #2b9f62 inset;
+  -o-box-shadow: 0 0 8px 0 #2b9f62 inset;
+  box-shadow: 0 0 8px 0 #2b9f62 inset;
+  color: #207749;
+}
+.btn-liner.danger {
+  color: #fb5240;
+  border-color: #fb5240;
+}
+.btn-liner.danger:hover,
+.btn-liner.danger:active,
+.btn-liner.danger.active {
+  background-color: #fedad6;
+  border-color: #fa250e;
+}
+.btn-liner.danger:active,
+.btn-liner.danger.active {
+  -webkit-box-shadow: 0 0 8px 0 #fa250e inset;
+  -moz-box-shadow: 0 0 8px 0 #fa250e inset;
+  -o-box-shadow: 0 0 8px 0 #fa250e inset;
+  box-shadow: 0 0 8px 0 #fa250e inset;
+  color: #d11804;
+}
+/*via btn end*/
+/*via popup*/
+.popup {
+  min-width: 50px;
+  min-height: 20px;
+  max-width: 500px;
+  padding: 10px;
+  margin: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
+  background: white;
+  color: black;
+  position: relative;
+  display: inline-block;
+}
+.popup:after,
+.popup .cursor {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  margin: 0;
+  z-index: 10;
+}
+.popup-left {
+  margin-right: 10px;
+}
+.popup-left:after,
+.popup-left .cursor {
+  border-left-color: white;
+  right: -20px;
+  top: 50%;
+  margin-top: -10px;
+}
+.popup-right {
+  margin-left: 10px;
+}
+.popup-right:after,
+.popup-right .cursor {
+  border-right-color: white;
+  left: -20px;
+  top: 50%;
+  margin-top: -10px;
+}
+.popup-top {
+  margin-bottom: 10px;
+}
+.popup-top:after,
+.popup-top .cursor {
+  border-top-color: white;
+  left: 50%;
+  bottom: -20px;
+  margin-left: -10px;
+}
+.popup-bottom {
+  margin-top: 10px;
+}
+.popup-bottom:after,
+.popup-bottom .cursor {
+  border-bottom-color: white;
+  left: 50%;
+  top: -20px;
+  margin-left: -10px;
+}
+/*via popup end*/
+/*via panel*/
+.panel {
+  padding: 10px;
+  margin: 10px;
+  -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
+  min-height: 28px;
+  min-width: 30px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  background: white;
+  display: inline-block;
+}
+.panel .panel-head {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 20px;
+  color: #7c8389;
+  text-align: center;
+}
+.panel .panel-body {
+  margin: 5px;
+}
+/*panel color mixin*/
+/*panel color mixin end*/
+.panel.success {
+  border-top: 5px solid #36c77b;
+}
+.panel.success .panel-head {
+  color: #2b9f62;
+}
+.panel.danger {
+  border-top: 5px solid #fb5240;
+}
+.panel.danger .panel-head {
+  color: #fa250e;
+}
+.panel.primary {
+  border-top: 5px solid #0080ff;
+}
+.panel.primary .panel-head {
+  color: #0066cc;
+}
+.panel.default {
+  border-top: 5px solid #55606e;
+}
+.panel.default .panel-head {
+  color: #3f4751;
+}
+/*via panel end*/
+/*input*/
+/*input color mixin*/
+/*input color mixin end*/
+input,
+select,
+textarea {
+  padding: 10px;
+  border: 1px solid #d9d9d9;
+  margin: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+input:focus,
+select:focus,
+textarea:focus {
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 128, 255, 0.7) inset;
+  -moz-box-shadow: 0 0 5px 0 rgba(0, 128, 255, 0.7) inset;
+  -o-box-shadow: 0 0 5px 0 rgba(0, 128, 255, 0.7) inset;
+  box-shadow: 0 0 5px 0 rgba(0, 128, 255, 0.7) inset;
+}
+input.success,
+select.success,
+textarea.success {
+  border: 2px solid #36c77b;
+}
+input.success:focus,
+select.success:focus,
+textarea.success:focus {
+  -webkit-box-shadow: 0 0 5px 0 rgba(54, 199, 123, 0.7) inset;
+  -moz-box-shadow: 0 0 5px 0 rgba(54, 199, 123, 0.7) inset;
+  -o-box-shadow: 0 0 5px 0 rgba(54, 199, 123, 0.7) inset;
+  box-shadow: 0 0 5px 0 rgba(54, 199, 123, 0.7) inset;
+}
+input.primary,
+select.primary,
+textarea.primary {
+  border: 2px solid #0080ff;
+}
+input.primary:focus,
+select.primary:focus,
+textarea.primary:focus {
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 128, 255, 0.7) inset;
+  -moz-box-shadow: 0 0 5px 0 rgba(0, 128, 255, 0.7) inset;
+  -o-box-shadow: 0 0 5px 0 rgba(0, 128, 255, 0.7) inset;
+  box-shadow: 0 0 5px 0 rgba(0, 128, 255, 0.7) inset;
+}
+input.danger,
+select.danger,
+textarea.danger {
+  border: 2px solid #fb5240;
+}
+input.danger:focus,
+select.danger:focus,
+textarea.danger:focus {
+  -webkit-box-shadow: 0 0 5px 0 rgba(251, 82, 64, 0.7) inset;
+  -moz-box-shadow: 0 0 5px 0 rgba(251, 82, 64, 0.7) inset;
+  -o-box-shadow: 0 0 5px 0 rgba(251, 82, 64, 0.7) inset;
+  box-shadow: 0 0 5px 0 rgba(251, 82, 64, 0.7) inset;
+}
+/*input*/
+/*list-group*/
+.list-group {
+  list-style: none;
+  margin: 5px;
+  padding: 0;
+}
+.list-group .list-item {
+  padding: 10px;
+  margin: 5px 10px 0 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+.list-group .list-item:hover {
+  background: #d9d9d9;
+}
+.list-group .list-item.active,
+.list-group .list-item:active {
+  background: #0080ff;
+  color: white;
+}
+/*list-group end*/
+/*slider*/
+/*slider handler color mixin*/
+/*slider handler color mixin end*/
+.slider {
+  border: 1px solid #55606e;
+}
+.slider .handler {
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: -10px 0 0 -10px;
+}
+.slider .handler.primary {
+  background-color: #0080ff;
+}
+.slider .handler.primary:hover {
+  background-color: #0066cc;
+}
+.slider .handler.primary:active {
+  background-color: #004d99;
+}
+.slider .handler.success {
+  background-color: #36c77b;
+}
+.slider .handler.success:hover {
+  background-color: #2b9f62;
+}
+.slider .handler.success:active {
+  background-color: #207749;
+}
+.slider .handler.danger {
+  background-color: #fb5240;
+}
+.slider .handler.danger:hover {
+  background-color: #fa250e;
+}
+.slider .handler.danger:active {
+  background-color: #d11804;
+}
+.slider .handler.default {
+  background-color: #55606e;
+}
+.slider .handler.default:hover {
+  background-color: #3f4751;
+}
+.slider .handler.default:active {
+  background-color: #292e34;
+}
+/*slider end*/

@@ -1,0 +1,348 @@
+@default-color:#55606e;
+@primary-color:#0080ff;
+@danger-color:#fb5240;
+@success-color:#36c77b;
+@def-font-size:14px;
+
+@def-border-radius:5px;
+
+/*mixin func*/
+
+.border-radius(@radius:10px){
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  -o-border-radius:@radius;
+  border-radius: @radius;
+}
+
+.box-shadow(@h-shadow:0,@v-shadow:0,@blur:5px,@spread:0,@color:rgba(0,0,0,0.6)) {
+  -webkit-box-shadow: @arguments;
+  -moz-box-shadow: @arguments;
+  -o-box-shadow: @arguments;
+  box-shadow: @arguments;
+}
+.box-shadow-inset(@h-shadow:0,@v-shadow:0,@blur:5px,@spread:0,@color:rgba(0,0,0,0.6)) {
+  -webkit-box-shadow: @arguments inset;
+  -moz-box-shadow: @arguments inset;
+  -o-box-shadow: @arguments inset;
+  box-shadow: @arguments inset;
+}
+.box-sizing(@sizing) {
+  -webkit-box-sizing: @sizing;
+  -moz-box-sizing: @sizing;
+  -o-box-sizing:@sizing;
+  box-sizing: @sizing;
+}
+
+
+/*mixin end*/
+
+*{
+  font-size: @def-font-size;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+/*via btn*/
+
+.btn {
+  color: white;
+  margin: 5px;
+  padding: 8px 15px;
+  border: 0 none;
+  .border-radius(@def-border-radius);
+  .box-sizing(border-box);
+}
+
+
+/*btn-color-mixin*/
+.btn-color(@color) {
+  background-color: @color;
+  &:active,&.active{
+    .box-shadow-inset(0,3px,0,0,rgba(0,0,0,0.3));
+  }
+  &:hover,&:active,&.active {
+    background-color: darken(@color,10%);
+  }
+}
+/*btn-colo-mixin end*/
+
+.btn.default {
+  .btn-color(@default-color);
+}
+
+.btn.primary {
+  .btn-color(@primary-color);
+}
+
+.btn.success {
+  .btn-color(@success-color);
+}
+
+.btn.danger {
+  .btn-color(@danger-color);
+}
+
+.btn-liner {
+  @border-width:2px;
+  @padding-h:15px;
+  @padding-v:8px;
+  background: white;
+  padding:@padding-v - @border-width @padding-h - @border-width;
+  margin: 5px;
+  border: @border-width solid;
+  .border-radius(@def-border-radius);
+  .box-sizing(border-box);
+
+}
+
+/*btn-line-color-mixin*/
+.liner-color(@color) {
+  color: @color;
+  border-color: @color;
+  &:hover,&:active,&.active {
+    background-color: lighten(@color,30%);
+    border-color: darken(@color,10%);
+  }
+  &:active,&.active{
+    .box-shadow-inset(0,0,8px,0,darken(@color,10%));
+    color: darken(@color,20%);
+  }
+}
+
+/*mixin init end*/
+.btn-liner.default{
+  .liner-color(@default-color);
+}
+.btn-liner.primary{
+  .liner-color(@primary-color);
+}
+.btn-liner.success{
+  .liner-color(@success-color);
+}
+.btn-liner.danger {
+  .liner-color(@danger-color);
+}
+
+/*via btn end*/
+
+/*via popup*/
+@popup-cursor-width:10px;
+
+.popup {
+  min-width: 50px;
+  min-height: @popup-cursor-width*2;
+  max-width: 500px;
+  padding: 10px;
+  margin: 10px;
+  .border-radius(@def-border-radius);
+  .box-shadow(0,0,15px,5px,rgba(0,0,0,0.3));
+  background: white;
+  color: black;
+  position: relative;
+  display: inline-block;
+  &:after,& .cursor {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: @popup-cursor-width solid transparent;
+    margin: 0;
+    z-index: 10;
+  }
+}
+.popup-left {
+  margin-right: @popup-cursor-width;
+  &:after,& .cursor {
+    border-left-color: white;
+    right: -@popup-cursor-width*2;
+    top:50%;
+    margin-top: -@popup-cursor-width;
+  }
+}
+.popup-right{
+  margin-left: @popup-cursor-width;
+  &:after,& .cursor {
+    border-right-color: white;
+    left: -@popup-cursor-width*2;
+    top:50%;
+    margin-top: -@popup-cursor-width;
+  }
+}
+
+.popup-top {
+  margin-bottom: @popup-cursor-width;
+  &:after,& .cursor {
+    border-top-color: white;
+    left: 50%;
+    bottom:-@popup-cursor-width*2;
+    margin-left: -@popup-cursor-width;
+  }
+}
+
+.popup-bottom {
+  margin-top: @popup-cursor-width;
+  &:after,& .cursor {
+    border-bottom-color: white;
+    left: 50%;
+    top:-@popup-cursor-width*2;
+    margin-left: -@popup-cursor-width;
+  }
+}
+/*via popup end*/
+
+/*via panel*/
+
+.panel {
+  padding: 10px;
+  margin: 10px;
+  .box-shadow(0,0,15px,0,rgba(0,0,0,0.3));
+  min-height: @def-font-size*2;
+  min-width: 30px;
+  .border-radius(@def-border-radius);
+  background: white;
+  display: inline-block;
+  .panel-head {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 20px;
+    color: #7c8389;
+    text-align: center;
+  }
+  .panel-body {
+    margin: 5px;
+  }
+}
+/*panel color mixin*/
+.panel-color(@color) {
+  border-top: 5px solid @color;
+  .panel-head {
+    color: darken(@color,10%);
+  }
+}
+
+/*panel color mixin end*/
+
+.panel.success {
+  .panel-color(@success-color);
+}
+.panel.danger {
+  .panel-color(@danger-color);
+}
+.panel.primary{
+  .panel-color(@primary-color);
+}
+.panel.default{
+  .panel-color(@default-color);
+}
+
+/*via panel end*/
+
+/*input*/
+
+/*input color mixin*/
+
+.input-color(@color) {
+  &:focus{
+    .box-shadow-inset(0,0,5px,0,fade(@color,70%));
+  }
+  & {
+    border:2px solid @color;
+  }
+}
+
+
+/*input color mixin end*/
+
+input,select,textarea {
+  padding: 10px;
+  border:1px solid #d9d9d9;
+  margin: 5px;
+  .border-radius(@def-border-radius);
+  &:focus{
+    .box-shadow-inset(0,0,5px,0,fade(@primary-color,70%));
+  }
+  &.success {
+    .input-color(@success-color);
+  }
+  &.primary {
+    .input-color(@primary-color);
+  }
+  &.danger {
+    .input-color(@danger-color);
+  }
+}
+
+/*input*/
+
+/*list-group*/
+
+@list-hover-color:#d9d9d9;
+
+.list-group {
+  list-style: none;
+  margin: 5px;
+  padding: 0;
+  & .list-item {
+    padding: 10px;
+    margin: 5px 10px 0 10px;
+    .border-radius(@def-border-radius);
+
+    &:hover {
+      background: @list-hover-color;
+    }
+
+    &.active,&:active {
+      background: @primary-color;
+      color: white;
+    }
+  }
+}
+
+/*list-group end*/
+
+/*slider*/
+
+/*slider handler color mixin*/
+
+.slider-color(@color) {
+  background-color: @color;
+  &:hover{
+    background-color: darken(@color,10%);
+  }
+  &:active {
+    background-color: darken(@color,20%);
+  }
+}
+
+/*slider handler color mixin end*/
+
+.slider {
+  border: 1px solid @default-color;
+  .handler {
+    @handler-radius:20px;
+    width: @handler-radius;
+    height: @handler-radius;
+    .border-radius(@handler-radius/2);
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: -@handler-radius/2 0 0 -@handler-radius/2;
+
+    &.primary {
+      .slider-color(@primary-color);
+    }
+    &.success {
+      .slider-color(@success-color);
+    }
+    &.danger {
+      .slider-color(@danger-color);
+    }
+    &.default {
+      .slider-color(@default-color);
+    }
+
+  }
+}
+/*slider end*/
