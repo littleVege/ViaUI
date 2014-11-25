@@ -1,12 +1,3 @@
-/*mixin func*/
-/*mixin end*/
-* {
-  font-size: 14px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
 /*via btn*/
 .btn {
   color: white;
@@ -173,130 +164,6 @@
   color: #d11804;
 }
 /*via btn end*/
-/*via popup*/
-.popup {
-  min-width: 50px;
-  min-height: 20px;
-  max-width: 500px;
-  padding: 10px;
-  margin: 10px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
-  -o-box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
-  background: white;
-  color: black;
-  position: relative;
-  display: inline-block;
-}
-.popup:after,
-.popup .cursor {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 0;
-  border: 10px solid transparent;
-  margin: 0;
-  z-index: 10;
-}
-.popup-left {
-  margin-right: 10px;
-}
-.popup-left:after,
-.popup-left .cursor {
-  border-left-color: white;
-  right: -20px;
-  top: 50%;
-  margin-top: -10px;
-}
-.popup-right {
-  margin-left: 10px;
-}
-.popup-right:after,
-.popup-right .cursor {
-  border-right-color: white;
-  left: -20px;
-  top: 50%;
-  margin-top: -10px;
-}
-.popup-top {
-  margin-bottom: 10px;
-}
-.popup-top:after,
-.popup-top .cursor {
-  border-top-color: white;
-  left: 50%;
-  bottom: -20px;
-  margin-left: -10px;
-}
-.popup-bottom {
-  margin-top: 10px;
-}
-.popup-bottom:after,
-.popup-bottom .cursor {
-  border-bottom-color: white;
-  left: 50%;
-  top: -20px;
-  margin-left: -10px;
-}
-/*via popup end*/
-/*via panel*/
-.panel {
-  padding: 10px;
-  margin: 10px;
-  -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
-  -o-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
-  min-height: 28px;
-  min-width: 30px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
-  background: white;
-}
-.panel .panel-head {
-  font-size: 16px;
-  font-weight: bold;
-  margin: 20px;
-  color: #7c8389;
-  text-align: center;
-}
-.panel .panel-body {
-  margin: 5px;
-}
-/*panel color mixin*/
-/*panel color mixin end*/
-.panel.success {
-  border-top: 5px solid #36c77b;
-}
-.panel.success .panel-head {
-  color: #2b9f62;
-}
-.panel.danger {
-  border-top: 5px solid #fb5240;
-}
-.panel.danger .panel-head {
-  color: #fa250e;
-}
-.panel.primary {
-  border-top: 5px solid #0080ff;
-}
-.panel.primary .panel-head {
-  color: #0066cc;
-}
-.panel.default {
-  border-top: 5px solid #55606e;
-}
-.panel.default .panel-head {
-  color: #3f4751;
-}
-/*via panel end*/
 /*input*/
 /*input color mixin*/
 /*input color mixin end*/
@@ -387,6 +254,168 @@ textarea {
   color: white;
 }
 /*list-group end*/
+/*via panel*/
+.panel {
+  padding: 10px;
+  margin: 10px;
+  -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
+  min-height: 28px;
+  min-width: 30px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  background: white;
+}
+.panel .panel-head {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 20px;
+  color: #7c8389;
+  text-align: center;
+}
+.panel .panel-body {
+  margin: 5px;
+}
+/*panel color mixin*/
+/*panel color mixin end*/
+.panel.success {
+  border-top: 5px solid #36c77b;
+}
+.panel.success .panel-head {
+  color: #2b9f62;
+}
+.panel.danger {
+  border-top: 5px solid #fb5240;
+}
+.panel.danger .panel-head {
+  color: #fa250e;
+}
+.panel.primary {
+  border-top: 5px solid #0080ff;
+}
+.panel.primary .panel-head {
+  color: #0066cc;
+}
+.panel.default {
+  border-top: 5px solid #55606e;
+}
+.panel.default .panel-head {
+  color: #3f4751;
+}
+/*via panel end*/
+/*via popup*/
+.popup {
+  min-width: 50px;
+  min-height: 20px;
+  max-width: 500px;
+  padding: 10px;
+  margin: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
+  background: white;
+  color: black;
+  position: relative;
+  display: inline-block;
+}
+.popup:after,
+.popup .cursor {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  margin: 0;
+  z-index: 10;
+}
+.popup-left {
+  margin-right: 10px;
+}
+.popup-left:after,
+.popup-left .cursor {
+  border-left-color: white;
+  right: -20px;
+  top: 50%;
+  margin-top: -10px;
+}
+.popup-right {
+  margin-left: 10px;
+}
+.popup-right:after,
+.popup-right .cursor {
+  border-right-color: white;
+  left: -20px;
+  top: 50%;
+  margin-top: -10px;
+}
+.popup-top {
+  margin-bottom: 10px;
+}
+.popup-top:after,
+.popup-top .cursor {
+  border-top-color: white;
+  left: 50%;
+  bottom: -20px;
+  margin-left: -10px;
+}
+.popup-bottom {
+  margin-top: 10px;
+}
+.popup-bottom:after,
+.popup-bottom .cursor {
+  border-bottom-color: white;
+  left: 50%;
+  top: -20px;
+  margin-left: -10px;
+}
+/*via popup end*/
+/*progress*/
+/*progress color mixin*/
+/*progress color mixin end*/
+.progress {
+  height: 15px;
+  position: relative;
+  margin: 5px;
+  padding: 0;
+  background: #d9d9d9;
+  overflow: hidden;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: -2px 2px 2px 0 rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: -2px 2px 2px 0 rgba(0, 0, 0, 0.1) inset;
+  -o-box-shadow: -2px 2px 2px 0 rgba(0, 0, 0, 0.1) inset;
+  box-shadow: -2px 2px 2px 0 rgba(0, 0, 0, 0.1) inset;
+}
+.progress .progress-bar {
+  float: left;
+  width: 0;
+  height: 100%;
+  line-height: 20px;
+}
+.progress.primary .progress-bar {
+  background: #0080ff;
+}
+.progress.danger .progress-bar {
+  background: #fb5240;
+}
+.progress.success .progress-bar {
+  background: #36c77b;
+}
+.progress.default .progress-bar {
+  background: #55606e;
+}
+/*progress end*/
 /*slider*/
 /*slider handler color mixin*/
 /*slider handler color mixin end*/
@@ -497,41 +526,3 @@ textarea {
   transition: left 0.6s ease;
 }
 /*slider end*/
-/*progress*/
-/*progress color mixin*/
-/*progress color mixin end*/
-.progress {
-  height: 15px;
-  position: relative;
-  margin: 5px;
-  padding: 0;
-  background: #d9d9d9;
-  overflow: hidden;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
-  -webkit-box-shadow: -2px 2px 2px 0 rgba(0, 0, 0, 0.1) inset;
-  -moz-box-shadow: -2px 2px 2px 0 rgba(0, 0, 0, 0.1) inset;
-  -o-box-shadow: -2px 2px 2px 0 rgba(0, 0, 0, 0.1) inset;
-  box-shadow: -2px 2px 2px 0 rgba(0, 0, 0, 0.1) inset;
-}
-.progress .progress-bar {
-  float: left;
-  width: 0;
-  height: 100%;
-  line-height: 20px;
-}
-.progress.primary .progress-bar {
-  background: #0080ff;
-}
-.progress.danger .progress-bar {
-  background: #fb5240;
-}
-.progress.success .progress-bar {
-  background: #36c77b;
-}
-.progress.default .progress-bar {
-  background: #55606e;
-}
-/*progress end*/

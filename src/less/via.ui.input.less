@@ -1,0 +1,46 @@
+@import (once) "via.ui.util.less";
+@import (once) "via.ui.var.less";
+
+
+
+/*input*/
+
+/*input color mixin*/
+
+.input-color(@color) {
+  &:focus{
+    .box-shadow-inset(0,0,5px,0,fade(@color,70%));
+  }
+  & {
+    border:2px solid @color;
+  }
+}
+
+
+/*input color mixin end*/
+
+input,select,textarea {
+  padding: 10px;
+  border:1px solid #d9d9d9;
+  margin: 5px;
+  .border-radius(@def-border-radius);
+  &:focus{
+    .box-shadow-inset(0,0,5px,0,fade(@primary-color,70%));
+  }
+  &.success {
+    .input-color(@success-color);
+  }
+  &.primary {
+    .input-color(@primary-color);
+  }
+  &.danger {
+    .input-color(@danger-color);
+  }
+}
+
+textarea {
+  display: block;
+  resize: vertical;
+  box-sizing: content-box;
+}
+/*input*/

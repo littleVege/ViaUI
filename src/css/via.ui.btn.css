@@ -1,0 +1,166 @@
+/*via btn*/
+.btn {
+  color: white;
+  margin: 5px;
+  padding: 8px 15px;
+  border: 0 none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*btn-color-mixin*/
+/*btn-colo-mixin end*/
+.btn.default {
+  background-color: #55606e;
+}
+.btn.default:active,
+.btn.default.active {
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
+  -o-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
+}
+.btn.default:hover,
+.btn.default:active,
+.btn.default.active {
+  background-color: #3f4751;
+}
+.btn.primary {
+  background-color: #0080ff;
+}
+.btn.primary:active,
+.btn.primary.active {
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
+  -o-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
+}
+.btn.primary:hover,
+.btn.primary:active,
+.btn.primary.active {
+  background-color: #0066cc;
+}
+.btn.success {
+  background-color: #36c77b;
+}
+.btn.success:active,
+.btn.success.active {
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
+  -o-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
+}
+.btn.success:hover,
+.btn.success:active,
+.btn.success.active {
+  background-color: #2b9f62;
+}
+.btn.danger {
+  background-color: #fb5240;
+}
+.btn.danger:active,
+.btn.danger.active {
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
+  -o-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
+}
+.btn.danger:hover,
+.btn.danger:active,
+.btn.danger.active {
+  background-color: #fa250e;
+}
+.btn-liner {
+  background: white;
+  padding: 6px 13px;
+  margin: 5px;
+  border: 2px solid;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*btn-line-color-mixin*/
+/*mixin init end*/
+.btn-liner.default {
+  color: #55606e;
+  border-color: #55606e;
+}
+.btn-liner.default:hover,
+.btn-liner.default:active,
+.btn-liner.default.active {
+  background-color: #a4adb8;
+  border-color: #3f4751;
+}
+.btn-liner.default:active,
+.btn-liner.default.active {
+  -webkit-box-shadow: 0 0 8px 0 #3f4751 inset;
+  -moz-box-shadow: 0 0 8px 0 #3f4751 inset;
+  -o-box-shadow: 0 0 8px 0 #3f4751 inset;
+  box-shadow: 0 0 8px 0 #3f4751 inset;
+  color: #292e34;
+}
+.btn-liner.primary {
+  color: #0080ff;
+  border-color: #0080ff;
+}
+.btn-liner.primary:hover,
+.btn-liner.primary:active,
+.btn-liner.primary.active {
+  background-color: #99ccff;
+  border-color: #0066cc;
+}
+.btn-liner.primary:active,
+.btn-liner.primary.active {
+  -webkit-box-shadow: 0 0 8px 0 #0066cc inset;
+  -moz-box-shadow: 0 0 8px 0 #0066cc inset;
+  -o-box-shadow: 0 0 8px 0 #0066cc inset;
+  box-shadow: 0 0 8px 0 #0066cc inset;
+  color: #004d99;
+}
+.btn-liner.success {
+  color: #36c77b;
+  border-color: #36c77b;
+}
+.btn-liner.success:hover,
+.btn-liner.success:active,
+.btn-liner.success.active {
+  background-color: #ade9ca;
+  border-color: #2b9f62;
+}
+.btn-liner.success:active,
+.btn-liner.success.active {
+  -webkit-box-shadow: 0 0 8px 0 #2b9f62 inset;
+  -moz-box-shadow: 0 0 8px 0 #2b9f62 inset;
+  -o-box-shadow: 0 0 8px 0 #2b9f62 inset;
+  box-shadow: 0 0 8px 0 #2b9f62 inset;
+  color: #207749;
+}
+.btn-liner.danger {
+  color: #fb5240;
+  border-color: #fb5240;
+}
+.btn-liner.danger:hover,
+.btn-liner.danger:active,
+.btn-liner.danger.active {
+  background-color: #fedad6;
+  border-color: #fa250e;
+}
+.btn-liner.danger:active,
+.btn-liner.danger.active {
+  -webkit-box-shadow: 0 0 8px 0 #fa250e inset;
+  -moz-box-shadow: 0 0 8px 0 #fa250e inset;
+  -o-box-shadow: 0 0 8px 0 #fa250e inset;
+  box-shadow: 0 0 8px 0 #fa250e inset;
+  color: #d11804;
+}
+/*via btn end*/

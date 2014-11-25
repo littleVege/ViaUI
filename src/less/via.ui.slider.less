@@ -1,0 +1,91 @@
+@import (once) "via.ui.util.less";
+@import (once) "via.ui.var.less";
+/*slider*/
+
+/*slider handler color mixin*/
+
+.slider-color(@color) {
+  & .slider-progress {
+    background-color: darken(@color,20%);
+    border-color: @color;
+  }
+  .handler {
+    background-color: @color;
+  }
+  & .handler:hover{
+    background-color: darken(@color,10%);
+  }
+  & .handler:active {
+    background-color: darken(@color,20%);
+  }
+}
+
+/*slider handler color mixin end*/
+
+.slider {
+  @handler-radius:20px;
+  border: 1px solid @default-color;
+  position: relative;
+  margin: @handler-radius @handler-radius/2;
+
+  /*slider progress*/
+  & .slider-progress {
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    border: 1px solid;
+    width: 0;
+    height: 0;
+  }
+
+
+  /*slider handler*/
+  .handler {
+    cursor: pointer;
+    width: @handler-radius;
+    height: @handler-radius;
+    .border-radius (@handler-radius/2);
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: -@handler-radius/2 0 0 -@handler-radius/2;
+  }
+
+  &.primary {
+    .slider-color(@primary-color);
+  }
+  &.success {
+    .slider-color(@success-color);
+  }
+  &.danger {
+    .slider-color(@danger-color);
+  }
+  &.default {
+    .slider-color(@default-color);
+  }
+
+
+  &:after {
+    content: "";
+    clear: both;
+  }
+}
+
+.slider-vertical {
+  width: 0;
+  height: 100%;
+  display: inline-block;
+
+  .handler {
+    top: 100%;
+    .transition(top,0.6s,ease);
+  }
+}
+.slider-horizontal {
+  height: 0;
+  width: 100%;
+  .handler {
+    .transition(left,0.6s,ease);
+  }
+}
+/*slider end*/

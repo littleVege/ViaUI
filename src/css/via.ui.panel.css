@@ -1,0 +1,53 @@
+/*via panel*/
+.panel {
+  padding: 10px;
+  margin: 10px;
+  -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
+  min-height: 28px;
+  min-width: 30px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  background: white;
+}
+.panel .panel-head {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 20px;
+  color: #7c8389;
+  text-align: center;
+}
+.panel .panel-body {
+  margin: 5px;
+}
+/*panel color mixin*/
+/*panel color mixin end*/
+.panel.success {
+  border-top: 5px solid #36c77b;
+}
+.panel.success .panel-head {
+  color: #2b9f62;
+}
+.panel.danger {
+  border-top: 5px solid #fb5240;
+}
+.panel.danger .panel-head {
+  color: #fa250e;
+}
+.panel.primary {
+  border-top: 5px solid #0080ff;
+}
+.panel.primary .panel-head {
+  color: #0066cc;
+}
+.panel.default {
+  border-top: 5px solid #55606e;
+}
+.panel.default .panel-head {
+  color: #3f4751;
+}
+/*via panel end*/

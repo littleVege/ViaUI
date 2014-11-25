@@ -1,0 +1,52 @@
+@import (once) "via.ui.util.less";
+@import (once) "via.ui.var.less";
+
+/*progress*/
+
+/*progress color mixin*/
+
+.progress-color(@color) {
+  .progress-bar {
+    background: @color;
+  }
+}
+
+/*progress color mixin end*/
+
+.progress {
+  height: 15px;
+  position: relative;
+  margin: 5px;
+  padding: 0;
+  background: #d9d9d9;
+  overflow: hidden;
+  .border-radius(@def-border-radius);
+  .box-shadow-inset(-2px,2px,2px,0,rgba(0,0,0,0.1));
+
+  .progress-bar {
+    float: left;
+    width: 0;
+    height: 100%;
+    line-height: 20px;
+
+  }
+
+  &.primary {
+    .progress-color(@primary-color);
+  }
+
+  &.danger {
+    .progress-color(@danger-color);
+  }
+
+  &.success {
+    .progress-color(@success-color);
+  }
+
+  &.default {
+    .progress-color(@default-color);
+  }
+
+}
+
+/*progress end*/

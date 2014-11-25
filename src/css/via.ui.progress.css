@@ -1,0 +1,38 @@
+/*progress*/
+/*progress color mixin*/
+/*progress color mixin end*/
+.progress {
+  height: 15px;
+  position: relative;
+  margin: 5px;
+  padding: 0;
+  background: #d9d9d9;
+  overflow: hidden;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: -2px 2px 2px 0 rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: -2px 2px 2px 0 rgba(0, 0, 0, 0.1) inset;
+  -o-box-shadow: -2px 2px 2px 0 rgba(0, 0, 0, 0.1) inset;
+  box-shadow: -2px 2px 2px 0 rgba(0, 0, 0, 0.1) inset;
+}
+.progress .progress-bar {
+  float: left;
+  width: 0;
+  height: 100%;
+  line-height: 20px;
+}
+.progress.primary .progress-bar {
+  background: #0080ff;
+}
+.progress.danger .progress-bar {
+  background: #fb5240;
+}
+.progress.success .progress-bar {
+  background: #36c77b;
+}
+.progress.default .progress-bar {
+  background: #55606e;
+}
+/*progress end*/

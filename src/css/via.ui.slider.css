@@ -1,0 +1,110 @@
+/*slider*/
+/*slider handler color mixin*/
+/*slider handler color mixin end*/
+.slider {
+  border: 1px solid #55606e;
+  position: relative;
+  margin: 20px 10px;
+  /*slider progress*/
+  /*slider handler*/
+}
+.slider .slider-progress {
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  border: 1px solid;
+  width: 0;
+  height: 0;
+}
+.slider .handler {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: -10px 0 0 -10px;
+}
+.slider.primary .slider-progress {
+  background-color: #004d99;
+  border-color: #0080ff;
+}
+.slider.primary .handler {
+  background-color: #0080ff;
+}
+.slider.primary .handler:hover {
+  background-color: #0066cc;
+}
+.slider.primary .handler:active {
+  background-color: #004d99;
+}
+.slider.success .slider-progress {
+  background-color: #207749;
+  border-color: #36c77b;
+}
+.slider.success .handler {
+  background-color: #36c77b;
+}
+.slider.success .handler:hover {
+  background-color: #2b9f62;
+}
+.slider.success .handler:active {
+  background-color: #207749;
+}
+.slider.danger .slider-progress {
+  background-color: #d11804;
+  border-color: #fb5240;
+}
+.slider.danger .handler {
+  background-color: #fb5240;
+}
+.slider.danger .handler:hover {
+  background-color: #fa250e;
+}
+.slider.danger .handler:active {
+  background-color: #d11804;
+}
+.slider.default .slider-progress {
+  background-color: #292e34;
+  border-color: #55606e;
+}
+.slider.default .handler {
+  background-color: #55606e;
+}
+.slider.default .handler:hover {
+  background-color: #3f4751;
+}
+.slider.default .handler:active {
+  background-color: #292e34;
+}
+.slider:after {
+  content: "";
+  clear: both;
+}
+.slider-vertical {
+  width: 0;
+  height: 100%;
+  display: inline-block;
+}
+.slider-vertical .handler {
+  top: 100%;
+  -webkit-transition: top 0.6s ease;
+  -moz-transition: top 0.6s ease;
+  -o-transition: top 0.6s ease;
+  transition: top 0.6s ease;
+}
+.slider-horizontal {
+  height: 0;
+  width: 100%;
+}
+.slider-horizontal .handler {
+  -webkit-transition: left 0.6s ease;
+  -moz-transition: left 0.6s ease;
+  -o-transition: left 0.6s ease;
+  transition: left 0.6s ease;
+}
+/*slider end*/

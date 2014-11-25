@@ -1,0 +1,46 @@
+@import (once) "via.ui.util";
+@import (once) "via.ui.var";
+
+@switch-width:120px;
+@switch-height:30px;
+@handle-radius:@switch-height - 1px;
+
+.handler-color(@color) {
+  background: @color;
+  &:hover {
+    background: darken(@color,10%);
+  }
+  &:active {
+    background: darken(@color,20%);
+  }
+}
+
+.switch {
+  width: @switch-width;
+  height: @switch-height;
+  .border-radius(@switch-height/2);
+  padding: 1px;
+
+  .handler {
+    width: @handle-radius;
+    height: @handle-radius;
+    .border-radius(@handle-radius/2);
+
+    &.primary {
+      .handler-color(@primary-color);
+    }
+    &.success {
+      .handler-color(@success-color);
+    }
+    &.danger {
+      .handler-color(@danger-color);
+    }
+    &.default {
+      .handler-color(@default-color);
+    }
+  }
+
+  &.active {
+    background: @success-color;
+  }
+}

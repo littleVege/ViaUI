@@ -1,0 +1,67 @@
+/*input*/
+/*input color mixin*/
+/*input color mixin end*/
+input,
+select,
+textarea {
+  padding: 10px;
+  border: 1px solid #d9d9d9;
+  margin: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+input:focus,
+select:focus,
+textarea:focus {
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 128, 255, 0.7) inset;
+  -moz-box-shadow: 0 0 5px 0 rgba(0, 128, 255, 0.7) inset;
+  -o-box-shadow: 0 0 5px 0 rgba(0, 128, 255, 0.7) inset;
+  box-shadow: 0 0 5px 0 rgba(0, 128, 255, 0.7) inset;
+}
+input.success,
+select.success,
+textarea.success {
+  border: 2px solid #36c77b;
+}
+input.success:focus,
+select.success:focus,
+textarea.success:focus {
+  -webkit-box-shadow: 0 0 5px 0 rgba(54, 199, 123, 0.7) inset;
+  -moz-box-shadow: 0 0 5px 0 rgba(54, 199, 123, 0.7) inset;
+  -o-box-shadow: 0 0 5px 0 rgba(54, 199, 123, 0.7) inset;
+  box-shadow: 0 0 5px 0 rgba(54, 199, 123, 0.7) inset;
+}
+input.primary,
+select.primary,
+textarea.primary {
+  border: 2px solid #0080ff;
+}
+input.primary:focus,
+select.primary:focus,
+textarea.primary:focus {
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 128, 255, 0.7) inset;
+  -moz-box-shadow: 0 0 5px 0 rgba(0, 128, 255, 0.7) inset;
+  -o-box-shadow: 0 0 5px 0 rgba(0, 128, 255, 0.7) inset;
+  box-shadow: 0 0 5px 0 rgba(0, 128, 255, 0.7) inset;
+}
+input.danger,
+select.danger,
+textarea.danger {
+  border: 2px solid #fb5240;
+}
+input.danger:focus,
+select.danger:focus,
+textarea.danger:focus {
+  -webkit-box-shadow: 0 0 5px 0 rgba(251, 82, 64, 0.7) inset;
+  -moz-box-shadow: 0 0 5px 0 rgba(251, 82, 64, 0.7) inset;
+  -o-box-shadow: 0 0 5px 0 rgba(251, 82, 64, 0.7) inset;
+  box-shadow: 0 0 5px 0 rgba(251, 82, 64, 0.7) inset;
+}
+textarea {
+  display: block;
+  resize: vertical;
+  box-sizing: content-box;
+}
+/*input*/

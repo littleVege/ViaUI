@@ -1,0 +1,66 @@
+@import (once) "via.ui.util.less";
+@import (once) "via.ui.var.less";
+/*via popup*/
+@popup-cursor-width:10px;
+
+.popup {
+  min-width: 50px;
+  min-height: @popup-cursor-width*2;
+  max-width: 500px;
+  padding: 10px;
+  margin: 10px;
+  .border-radius(@def-border-radius);
+  .box-shadow(0,0,15px,5px,rgba(0,0,0,0.3));
+  background: white;
+  color: black;
+  position: relative;
+  display: inline-block;
+  &:after,& .cursor {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: @popup-cursor-width solid transparent;
+    margin: 0;
+    z-index: 10;
+  }
+}
+.popup-left {
+  margin-right: @popup-cursor-width;
+  &:after,& .cursor {
+    border-left-color: white;
+    right: -@popup-cursor-width*2;
+    top:50%;
+    margin-top: -@popup-cursor-width;
+  }
+}
+.popup-right{
+  margin-left: @popup-cursor-width;
+  &:after,& .cursor {
+    border-right-color: white;
+    left: -@popup-cursor-width*2;
+    top:50%;
+    margin-top: -@popup-cursor-width;
+  }
+}
+
+.popup-top {
+  margin-bottom: @popup-cursor-width;
+  &:after,& .cursor {
+    border-top-color: white;
+    left: 50%;
+    bottom:-@popup-cursor-width*2;
+    margin-left: -@popup-cursor-width;
+  }
+}
+
+.popup-bottom {
+  margin-top: @popup-cursor-width;
+  &:after,& .cursor {
+    border-bottom-color: white;
+    left: 50%;
+    top:-@popup-cursor-width*2;
+    margin-left: -@popup-cursor-width;
+  }
+}
+/*via popup end*/
