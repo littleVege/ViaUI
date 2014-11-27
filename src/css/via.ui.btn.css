@@ -20,60 +20,60 @@
 }
 .btn.default:active,
 .btn.default.active {
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
-  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
-  -o-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.8) inset;
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.8) inset;
+  -o-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.8) inset;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.8) inset;
 }
 .btn.default:hover,
 .btn.default:active,
 .btn.default.active {
-  background-color: #3f4751;
+  background-color: #292e34;
 }
 .btn.primary {
   background-color: #0080ff;
 }
 .btn.primary:active,
 .btn.primary.active {
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
-  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
-  -o-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.8) inset;
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.8) inset;
+  -o-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.8) inset;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.8) inset;
 }
 .btn.primary:hover,
 .btn.primary:active,
 .btn.primary.active {
-  background-color: #0066cc;
+  background-color: #004d99;
 }
 .btn.success {
   background-color: #36c77b;
 }
 .btn.success:active,
 .btn.success.active {
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
-  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
-  -o-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.8) inset;
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.8) inset;
+  -o-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.8) inset;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.8) inset;
 }
 .btn.success:hover,
 .btn.success:active,
 .btn.success.active {
-  background-color: #2b9f62;
+  background-color: #207749;
 }
 .btn.danger {
   background-color: #fb5240;
 }
 .btn.danger:active,
 .btn.danger.active {
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
-  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
-  -o-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.8) inset;
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.8) inset;
+  -o-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.8) inset;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.8) inset;
 }
 .btn.danger:hover,
 .btn.danger:active,
 .btn.danger.active {
-  background-color: #fa250e;
+  background-color: #d11804;
 }
 .btn-liner {
   background: white;

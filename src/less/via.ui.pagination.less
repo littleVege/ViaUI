@@ -1,0 +1,27 @@
+@import (once) "via.ui.var.less";
+@import (once) "via.ui.util.less";
+
+.pagination {
+  margin: 10px 0;
+  list-style: none;
+  display: inline-block;
+  li {
+    display: inline-block;
+    .border-radius(@def-border-radius);
+    color: @primary-color;
+    a {
+      font-weight: bold;
+      font-size: 14px;
+      padding: 7px 12px;
+      position: relative;
+      float: left;
+    }
+    &:hover {
+      background-color: @hover-color;
+    }
+    &:active,&.active {
+      background-color: @primary-color;
+      color: white;
+    }
+  }
+}

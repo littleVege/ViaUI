@@ -1,7 +1,15 @@
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: @def-font-size;
+  font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+}
 
-@import (once) "via.ui.util.less";
-@import (once) "via.ui.var.less";
+a {
+  text-decoration: none;
+}
 
 @import "via.ui.btn.less";
 @import "via.ui.input.less";
@@ -10,3 +18,5 @@
 @import "via.ui.popup.less";
 @import "via.ui.progress.less";
 @import "via.ui.slider.less";
+@import "via.ui.pagination.less";
+@import "via.ui.modal.less";

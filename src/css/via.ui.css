@@ -1,3 +1,13 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+}
+a {
+  text-decoration: none;
+}
 /*via btn*/
 .btn {
   color: white;
@@ -20,60 +30,60 @@
 }
 .btn.default:active,
 .btn.default.active {
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
-  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
-  -o-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.8) inset;
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.8) inset;
+  -o-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.8) inset;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.8) inset;
 }
 .btn.default:hover,
 .btn.default:active,
 .btn.default.active {
-  background-color: #3f4751;
+  background-color: #292e34;
 }
 .btn.primary {
   background-color: #0080ff;
 }
 .btn.primary:active,
 .btn.primary.active {
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
-  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
-  -o-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.8) inset;
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.8) inset;
+  -o-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.8) inset;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.8) inset;
 }
 .btn.primary:hover,
 .btn.primary:active,
 .btn.primary.active {
-  background-color: #0066cc;
+  background-color: #004d99;
 }
 .btn.success {
   background-color: #36c77b;
 }
 .btn.success:active,
 .btn.success.active {
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
-  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
-  -o-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.8) inset;
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.8) inset;
+  -o-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.8) inset;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.8) inset;
 }
 .btn.success:hover,
 .btn.success:active,
 .btn.success.active {
-  background-color: #2b9f62;
+  background-color: #207749;
 }
 .btn.danger {
   background-color: #fb5240;
 }
 .btn.danger:active,
 .btn.danger.active {
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
-  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
-  -o-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.8) inset;
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.8) inset;
+  -o-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.8) inset;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.8) inset;
 }
 .btn.danger:hover,
 .btn.danger:active,
 .btn.danger.active {
-  background-color: #fa250e;
+  background-color: #d11804;
 }
 .btn-liner {
   background: white;
@@ -173,6 +183,7 @@ textarea {
   padding: 10px;
   border: 1px solid #d9d9d9;
   margin: 5px;
+  outline: none;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -o-border-radius: 5px;
@@ -181,15 +192,16 @@ textarea {
 input:focus,
 select:focus,
 textarea:focus {
-  -webkit-box-shadow: 0 0 5px 0 rgba(0, 128, 255, 0.7) inset;
-  -moz-box-shadow: 0 0 5px 0 rgba(0, 128, 255, 0.7) inset;
-  -o-box-shadow: 0 0 5px 0 rgba(0, 128, 255, 0.7) inset;
-  box-shadow: 0 0 5px 0 rgba(0, 128, 255, 0.7) inset;
+  -webkit-box-shadow: 0 0 8px 0 rgba(0, 128, 255, 0.7) inset;
+  -moz-box-shadow: 0 0 8px 0 rgba(0, 128, 255, 0.7) inset;
+  -o-box-shadow: 0 0 8px 0 rgba(0, 128, 255, 0.7) inset;
+  box-shadow: 0 0 8px 0 rgba(0, 128, 255, 0.7) inset;
 }
 input.success,
 select.success,
 textarea.success {
   border: 2px solid #36c77b;
+  padding: 8px;
 }
 input.success:focus,
 select.success:focus,
@@ -203,6 +215,7 @@ input.primary,
 select.primary,
 textarea.primary {
   border: 2px solid #0080ff;
+  padding: 8px;
 }
 input.primary:focus,
 select.primary:focus,
@@ -216,6 +229,7 @@ input.danger,
 select.danger,
 textarea.danger {
   border: 2px solid #fb5240;
+  padding: 8px;
 }
 input.danger:focus,
 select.danger:focus,
@@ -318,10 +332,10 @@ textarea {
   -moz-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
-  -webkit-box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
-  -o-box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
   background: white;
   color: black;
   position: relative;
@@ -526,3 +540,86 @@ textarea {
   transition: left 0.6s ease;
 }
 /*slider end*/
+.pagination {
+  margin: 10px 0;
+  list-style: none;
+  display: inline-block;
+}
+.pagination li {
+  display: inline-block;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  color: #0080ff;
+}
+.pagination li a {
+  font-weight: bold;
+  font-size: 14px;
+  padding: 7px 12px;
+  position: relative;
+  float: left;
+}
+.pagination li:hover {
+  background-color: #d9d9d9;
+}
+.pagination li:active,
+.pagination li.active {
+  background-color: #0080ff;
+  color: white;
+}
+.modal-backdrop {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+}
+.modal {
+  width: 500px;
+  height: auto;
+  min-height: 50px;
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  margin-left: -250px;
+  z-index: 1200;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+.modal-content {
+  position: relative;
+}
+.modal-ctr {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.modal-title {
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #55606e;
+}
+.modal-body {
+  padding: 0;
+  margin: 0;
+}
+.modal-foot {
+  float: right;
+  padding: 20px;
+}
+.modal-sm {
+  width: 250px;
+  margin-left: -125px;
+}

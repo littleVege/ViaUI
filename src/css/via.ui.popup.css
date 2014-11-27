@@ -9,10 +9,10 @@
   -moz-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
-  -webkit-box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
-  -o-box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
   background: white;
   color: black;
   position: relative;
