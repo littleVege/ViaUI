@@ -22,6 +22,18 @@
   width: 0;
   height: 100%;
   line-height: 20px;
+  -webkit-transition: width 0.3s ease;
+  -moz-transition: width 0.3s ease;
+  -o-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+}
+.progress .progress-bar:after,
+.progress .progress-bar .clearfix {
+  clear: both;
+  display: table;
+}
+.progress .progress-bar:after {
+  content: " ";
 }
 .progress.primary .progress-bar {
   background: #0080ff;

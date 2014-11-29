@@ -1,9 +1,10 @@
-@import (once) "via.ui.util";
-@import (once) "via.ui.var";
+@import (once) "via.ui.util.less";
+@import (once) "via.ui.var.less";
 
-@switch-width:120px;
 @switch-height:30px;
-@handle-radius:@switch-height - 1px;
+@switch-width:70px;
+@switch-padding:2px;
+@handle-diameter:@switch-height - 2*@switch-padding;
 
 .handler-color(@color) {
   background: @color;
@@ -19,12 +20,17 @@
   width: @switch-width;
   height: @switch-height;
   .border-radius(@switch-height/2);
-  padding: 1px;
+  padding: @switch-padding;
+  background: @hover-color;
+  margin: 5px;
+  display: inline-block;
 
   .handler {
-    width: @handle-radius;
-    height: @handle-radius;
-    .border-radius(@handle-radius/2);
+    width: @handle-diameter;
+    height: @handle-diameter;
+    display: inherit;
+    .transition(margin,0.3s,ease);
+    .border-radius(@handle-diameter/2);
 
     &.primary {
       .handler-color(@primary-color);
@@ -42,5 +48,8 @@
 
   &.active {
     background: @success-color;
+    .handler {
+      margin-left: 40px;
+    }
   }
 }

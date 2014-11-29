@@ -31,3 +31,13 @@
   -o-transition:@arguments;
   transition: @arguments;
 }
+
+.clearfix() {
+  &:after,.clearfix {
+    clear: both;
+    display: table;
+  }
+  &:after {
+    content: " ";
+  }
+}

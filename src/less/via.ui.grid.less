@@ -1,0 +1,28 @@
+@import (once) "via.ui.util.less";
+
+.generate-grid(@n, @i: 1) when (@i =< @n) {
+  .col-@{i} {
+    width: (@i * 100% / @n);
+    float: left;
+  }
+  .generate-grid(@n, (@i + 1));
+}
+
+.container-fluid {
+  width: 100%;
+}
+
+.container {
+  width: 1100px;
+  margin: auto;
+  .clearfix();
+}
+
+.row {
+  display: block;
+  width: 100%;
+  .clearfix();
+}
+
+.generate-grid(12);
+

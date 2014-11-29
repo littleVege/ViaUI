@@ -1,0 +1,67 @@
+.switch {
+  width: 70px;
+  height: 30px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+  padding: 2px;
+  background: #d9d9d9;
+  margin: 5px;
+  display: inline-block;
+}
+.switch .handler {
+  width: 26px;
+  height: 26px;
+  display: inherit;
+  -webkit-transition: margin 0.3s ease;
+  -moz-transition: margin 0.3s ease;
+  -o-transition: margin 0.3s ease;
+  transition: margin 0.3s ease;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -o-border-radius: 13px;
+  border-radius: 13px;
+}
+.switch .handler.primary {
+  background: #0080ff;
+}
+.switch .handler.primary:hover {
+  background: #0066cc;
+}
+.switch .handler.primary:active {
+  background: #004d99;
+}
+.switch .handler.success {
+  background: #36c77b;
+}
+.switch .handler.success:hover {
+  background: #2b9f62;
+}
+.switch .handler.success:active {
+  background: #207749;
+}
+.switch .handler.danger {
+  background: #fb5240;
+}
+.switch .handler.danger:hover {
+  background: #fa250e;
+}
+.switch .handler.danger:active {
+  background: #d11804;
+}
+.switch .handler.default {
+  background: #55606e;
+}
+.switch .handler.default:hover {
+  background: #3f4751;
+}
+.switch .handler.default:active {
+  background: #292e34;
+}
+.switch.active {
+  background: #36c77b;
+}
+.switch.active .handler {
+  margin-left: 40px;
+}

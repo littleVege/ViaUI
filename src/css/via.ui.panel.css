@@ -8,6 +8,7 @@
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
   min-height: 28px;
   min-width: 30px;
+  border: 1px solid #D9D9D9\9;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -o-border-radius: 5px;
