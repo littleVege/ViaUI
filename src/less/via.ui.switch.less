@@ -31,6 +31,7 @@
     display: inherit;
     .transition(margin,0.3s,ease);
     .border-radius(@handle-diameter/2);
+    position: relative;
 
     &.primary {
       .handler-color(@primary-color);
@@ -44,12 +45,26 @@
     &.default {
       .handler-color(@default-color);
     }
+
+    i {
+      position: absolute;
+      left: 30px;
+      top: 0;
+      margin: 6px 5px;
+      font-size: 10px;
+      color: white;
+    }
+
   }
 
   &.active {
-    background: @success-color;
+    background: lighten(@success-color,20%);
     .handler {
       margin-left: 40px;
+    }
+
+    i {
+      left: -40px;
     }
   }
 }

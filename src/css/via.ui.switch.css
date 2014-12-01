@@ -22,6 +22,7 @@
   -moz-border-radius: 13px;
   -o-border-radius: 13px;
   border-radius: 13px;
+  position: relative;
 }
 .switch .handler.primary {
   background: #0080ff;
@@ -59,9 +60,20 @@
 .switch .handler.default:active {
   background: #292e34;
 }
+.switch .handler i {
+  position: absolute;
+  left: 30px;
+  top: 0;
+  margin: 6px 5px;
+  font-size: 10px;
+  color: white;
+}
 .switch.active {
-  background: #36c77b;
+  background: #85deaf;
 }
 .switch.active .handler {
   margin-left: 40px;
+}
+.switch.active i {
+  left: -40px;
 }
